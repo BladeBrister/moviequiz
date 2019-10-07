@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Quiz</title>
+<style>
+body {
+background-image: url(spongebob.gif);
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+text-align: center;
+font-size: 50px;
+height: 250px;
+background: beige;
+background-image: url(popcorn.jpg);
+color: black;
+}
+    
+h1 {
+margin-top: 20px;
+}
+  
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+</style>
+
+
+</head>
+
+<body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
+<h1>Movie Quiz!</h1>
+</div><!-- close header div -->
+
+<h1>Movie Quiz</h1>
+<form id="form1">
+
+<h2>What is James Bond service number?</h2>
+<label for="bond_1337"><input type="radio" name="bond" value="0" id="bond_1337" />Secret Agent 1337</label>
+<label for="bond_117"><input type="radio" name="bond" value="0" id="bond_117" />Secret Agent 117</label>
+<label for="bond_007"><input type="radio" name="bond" value="10" id="bond_007" />Secret Agent 007</label>
+<label for="bond_9"><input type="radio" name="bond" value="0" id="bond_9"/>Secret Agent 9</label>
+
+<h2>Which power does Jack Jack from Disney The Incredibles 2 not have?</h2>
+<label for="jack_inv"><input type="radio" name="jack" value="10" id="jack_inv"/>Invisibility</label>
+<label for="jack_fire"><input type="radio" name="jack" value="0" id="jack_fire"/>Fire</label>
+<label for="jack_poly"><input type="radio" name="jack" value="0" id="jack_poly" />Polymorphism</label>
+<label for="jack_laser"><input type="radio" name="jack" value="0" id="jack_laser" />Laser Vision</label>
+
+<h2>Which movie is about a car that gets lost on a way to a race?</h2>
+<label for="car_gone"><input type="radio" name="car" value="0" id="car_gone" />Gone in 60 secs</label>
+<label for="car_cars"><input type="radio" name="car" value="10" id="car_cars" />Disney Cars </label>
+<label for="car_fast"><input type="radio" name="car" value="0" id="car_fast" />Fast and the Furious</label>
+<label for="car_get"><input type="radio" name="car" value="0" id="car_get" />Getaway</label>
+
+<h2>Which movie was completed without one of the main stars dying in real life?</h2>
+<label for="death_dark"><input type="radio" name="death" value="0" id="death_dark" />Dark Knight</label>
+<label for="death_furious"><input type="radio" name="death" value="0" id="death_furious" />Furious 7</label>
+<label for="death_glad"><input type="radio" name="death" value="0" id="death_glad" />Gladiator</label>
+<label for="death_man"><input type="radio" name="death"  value="10" id="death_man" />Man of Steel</label>
+
+<h2>Who is the best superhero out of these four?</h2>
+<label for="sup_sup"><input type="radio" name="superh" value="10" id="sup_sup" />Superman. </label>
+<label for="sup_bat"><input type="radio" name="superh" value="10" id="sup_bat" />Batman. </label>
+<label for="sup_won"><input type="radio" name="superh" value="10" id="sup_won" />Wonder Woman. </label>
+<label for="sup_aqua"><input type="radio" name="superh"  value="10" id="sup_aqua" />Aquaman. </label>
+
+<h2>Which moive did not win an oscar?</h2>
+<label for="oscar_first"><input type="radio" name="oscar" value="0" id="oscar_first" />First Man</label>
+<label for="oscar_black"><input type="radio" name="oscar" value="0" id="oscar_black" />Black Panther</label>
+<label for="oscar_psycho"><input type="radio" name="oscar" value="10" id="oscar_psycho" />American Psycho</label>
+<label for="oscar_lord"><input type="radio" name="oscar" value="0" id="oscar_lord"/>The Lord of the Rings: The Return of the King</label>
+
+<h2>Which movie does not have a main character that is a cat?</h2>
+<label for="cat_nine"><input type="radio" name="cat" value="0" id="cat_nine" />Nine Lives</label>
+<label for="cat_black"><input type="radio" name="cat" value="10" id="cat_black" />Black Panther</label>
+<label for="cat_gar"><input type="radio" name="cat" value="0" id="cat_gar" />Garfield</label>
+<label for="cat_oliver"><input type="radio" name="cat" value="0" id="cat_oliver"/>Oliver and Company</label>
+
+<h2>What movie did the quote "Houston, we have a problem." come from?</h2>
+<label for="apollo_13"><input type="radio" name="apollo" value="10" id="apollo_13" />Apollo 13</label>
+<label for="apollo_12"><input type="radio" name="apollo" value="0" id="apollo_12" />Apollo 12</label>
+<label for="apollo_14"><input type="radio" name="apollo" value="0" id="apollo_14" />Apollo 14</label>
+<label for="apollo_15"><input type="radio" name="apollo" value="0" id="apollo_15"/>Apollo 15</label>
+
+<h2>Who said "What do you mean? Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?"</h2>
+<label for="gand_allomere"><input type="radio" name="gand" value="0" id="gand_allomere" />Allomere</label>
+<label for="gand_snape"><input type="radio" name="gand" value="0" id="gand_snape" />Professor Snape</label>
+<label for="gand_troll"><input type="radio" name="gand" value="0" id="gand_troll" />Bridge Troll</label>
+<label for="gand_gand"><input type="radio" name="gand" value="10" id="gand_gand"/>Gandalf the Grey</label>
+  
+<h2>Who did not play the role of Batman?</h2>
+<label for="bat_chris"><input type="radio" name="bat" value="0" id="bat_chris" />Christian Bale</label>
+<label for="bat_mike"><input type="radio" name="bat" value="0" id="bat_mike" />Michael Keaton</label>
+<label for="bat_josh"><input type="radio" name="bat" value="10" id="bat_josh" />Josh Brolin</label>
+<label for="bat_ben"><input type="radio" name="bat" value="0" id="bat_ben"/>Ben Affleck</label>
+    
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+  
+<script>
+// add script here to make quiz interactive
+  document.getElementById("form1").onsubmit=function() {
+    
+      if(document.querySelector('input[name = "bond"]:checked') &&  document.querySelector('input[name = "jack"]:checked') && document.querySelector('input[name = "car"]:checked') &&
+    document.querySelector('input[name = "death"]:checked') &&
+    document.querySelector('input[name = "superh"]:checked') &&
+    document.querySelector('input[name = "oscar"]:checked') &&
+    document.querySelector('input[name = "cat"]:checked') &&
+    document.querySelector('input[name = "apollo"]:checked') && 
+    document.querySelector('input[name = "gand"]:checked') &&
+    document.querySelector('input[name = "bat"]:checked')){
+      
+    bond = parseInt(document.querySelector('input[name = "bond"]:checked').value);
+    jack = parseInt(document.querySelector('input[name = "jack"]:checked').value);
+    car = parseInt(document.querySelector('input[name = "car"]:checked').value);
+    death = parseInt(document.querySelector('input[name = "death"]:checked').value);
+    superh = parseInt(document.querySelector('input[name = "superh"]:checked').value);
+    oscar = parseInt(document.querySelector('input[name = "oscar"]:checked').value);
+    cat = parseInt(document.querySelector('input[name = "cat"]:checked').value);
+    apollo = parseInt(document.querySelector('input[name = "apollo"]:checked').value);
+    gand = parseInt(document.querySelector('input[name = "gand"]:checked').value);
+    bat = parseInt(document.querySelector('input[name = "bat"]:checked').value);
+    result = bond + jack + car + death + superh + oscar + cat + apollo + gand + bat;
+     
+    document.getElementById("grade").innerHTML = result;
+          
+ grading = [
+	   {score:0,feedback:"Try again.", image: "zero.jpg"},
+	   {score:10,feedback:"Try again.", image: "ten.jpg"},
+	   {score:20,feedback:"Try again.", image: "twenty.jpg"},
+	   {score:30,feedback:"Try again.", image: "thirty.jpg"},
+	   {score:40,feedback:"Getting Closer! Keep trying.", image: "forty.jpg"},
+	   {score:50,feedback:"Excellent! You're a movie watcher!", image: "fifty.jpg"},
+       {score:60,feedback:"Excellent! You're a movie goer!", image: "sixty.jpg"},
+       {score:70,feedback:"Excellent! You're a movie critic!", image: "seventy.jpg"},
+       {score:80,feedback:"Excellent! You're a movie buff!", image: "eighty.jpg"},
+       {score:90,feedback:"Excellent! You're a movie scholar!", image: "ninety.jpg"},
+       {score:100,feedback:"Excellent! You are the movie!", image: "onehundred.jpg"},
+     ];
+	  
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+	  }
+	  }
+
+	  document.getElementById("grade2").innerHTML = result2;
+      }
+          else {
+              alert("Fill out all questions before submitting.");
+          }
+
+return false; // required to not refresh the page; just leave this here
+  }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
